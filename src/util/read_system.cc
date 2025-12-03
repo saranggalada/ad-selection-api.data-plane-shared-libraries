@@ -198,7 +198,7 @@ absl::flat_hash_map<std::string, double> GetMemory() {
 
   while (std::fgets(buff, sizeof(buff), fd) != nullptr) {
     if (absl::StartsWith(buff, "VmRSS")) {
-      if (std::sscanf(buff, "%63s %lu %15s", name, &value, unit) == 3) {
+      if (std::sscanf(buff, "%63s %ld %15s", name, &value, unit) == 3) {
         ret["main process"] = value;
       } else {
         ABSL_LOG_EVERY_N_SEC(ERROR, kLogInterval)
