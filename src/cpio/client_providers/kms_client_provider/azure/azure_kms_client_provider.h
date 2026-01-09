@@ -18,6 +18,7 @@
 #define CPIO_CLIENT_PROVIDERS_KMS_CLIENT_PROVIDER_AZURE_AZURE_KMS_CLIENT_PROVIDER_H_
 
 #include <cstdlib>
+#include <iomanip>
 #include <memory>
 #include <string>
 #include <utility>
